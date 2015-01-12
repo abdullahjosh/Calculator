@@ -11,5 +11,7 @@ public class CalculationActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculation);
+        //simple commit and push using github :)
+
     }
 }
