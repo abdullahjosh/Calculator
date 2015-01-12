@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Number1"
+            android:layout_weight="0.02"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/num1" android:layout_weight="0.02"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium" android:text="Number2"
+              android:layout_weight="0.02"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number"
+              android:ems="10" android:id="@+id/num2" android:layout_weight="0.02"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/add" android:layout_weight="0.02" android:checked="false"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub"
+            android:id="@+id/sub" android:layout_weight="0.02" android:checked="false"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multi"
+            android:id="@+id/multi" android:layout_weight="0.02" android:checked="false"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Devide"
+            android:id="@+id/devide" android:layout_weight="0.02" android:checked="false"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Result"
+            android:layout_weight="0.02"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText" android:layout_weight="0.02"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:id="@+id/calculate" android:layout_weight="0.02"/>
+</LinearLayout>
