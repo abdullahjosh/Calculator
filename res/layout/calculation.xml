@@ -41,18 +41,26 @@
             android:layout_height="wrap_content"
             android:text="Devide"
             android:id="@+id/devide" android:layout_weight="0.02" android:checked="false"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Result"
-            android:layout_weight="0.02"/>
-    <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/answ" android:layout_weight="0.02"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="298dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Result:"
+                android:layout_weight="0.40"
+                android:id="@+id/r"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/answ" android:layout_weight="0.19"/>
+    </LinearLayout>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

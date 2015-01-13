@@ -6,12 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 /**
  * Created by Zuel on 09-01-2015.
  */
 public class CalculationActivity extends Activity {
     EditText n1,n2,ans;
+    TextView r;
     RadioButton _add, _sub, _multi, _devide;
     Button _show;
 
@@ -19,9 +21,12 @@ public class CalculationActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculation);
+        r= (TextView) findViewById(R.id.r);
         n1= (EditText) findViewById(R.id.num1);
         n2= (EditText) findViewById(R.id.num2);
         ans= (EditText) findViewById(R.id.answ);
+        ans.setVisibility(View.INVISIBLE);
+        r.setVisibility(View.INVISIBLE);
         _add= (RadioButton) findViewById(R.id.add);
         _sub= (RadioButton) findViewById(R.id.sub);
         _multi= (RadioButton) findViewById(R.id.multi);
@@ -95,11 +100,22 @@ public class CalculationActivity extends Activity {
                     //    ans.setText(
 
                    // }
-                    new3=new1/new2;
+                    if(new2!=0){
+                    new3=new1/new2;}
                 }
+
                 if(v.getId()==R.id.calculate)
                 {
+                    ans.setVisibility(View.VISIBLE);
+                    r.setVisibility(View.VISIBLE);
+                    if(new2!=0)
+                    {
                     ans.setText(Long.toString(new3));
+                    }
+                    else
+                    {
+                        ans.setText("Infinity");
+                    }
 
                 }
 
@@ -111,4 +127,5 @@ public class CalculationActivity extends Activity {
         //simple commit and push using github :)
 
     }
+
 }
